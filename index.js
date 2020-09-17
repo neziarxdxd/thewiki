@@ -17,7 +17,7 @@ app.get("/wike/:search",(req,res) => {
             var keys = Object.keys(getData);
             res.send({
                 "messages":[
-                    {"text":getData[keys]["extract"]}
+                    {"text":getData[keys]["extract"].replace(/(\r\n|\n|\r)/gm," ")}
             ]
             })
     });
