@@ -15,13 +15,17 @@ app.get("/wike/:search",(req,res) => {
         .then((json) => {
             var getData = json["query"]["pages"]
             var keys = Object.keys(getData);
-            res.send({"messages":getData[keys]["extract"]})
+            res.send({
+                "messages":[
+                    {"text":getData[keys]["extract"]}
+            ]
+            })
     });
 });
 
 
 app.get("/",(req,res) => {
-    res.send("Hello Wolrd");
+    res.send("Thank you for visiting");
 });
 app.listen(port,()=>{
     console.log("EXAMPLE LANG TOL");
