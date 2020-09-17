@@ -1,0 +1,27 @@
+{
+  "name": "thewiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenraiching/thewiki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zenraiching/thewiki/issues"
+  },
+  "homepage": "https://github.com/zenraiching/thewiki#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "wikijs": "^6.0.1"
+  },
+  "engines": {
+    "node": "6.14.6"
+  }
+}
