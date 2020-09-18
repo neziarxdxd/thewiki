@@ -28,7 +28,7 @@ app.get("/",(req,res) => {
     res.send("Thank you for visiting");
 });
 app.listen(port,()=>{
-    console.log("EXAMPLE LANG TOL");
+    console.log("Runnnig server...");
 });
 
 
